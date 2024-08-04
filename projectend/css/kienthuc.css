@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.content {
+    display: flex;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+aside {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #cc2c3f;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+.new-posts {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.new-posts h2 {
+    color: #cc2c3f;
+}
+
+.new-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.new-posts li {
+    margin-bottom: 10px;
+}
+
+.new-posts a {
+    text-decoration: none;
+    color: #333;
+}
+
+.new-posts a:hover {
+    text-decoration: underline;
+}
+
+.featured-posts {
+    flex: 3;
+}
+
+.featured-posts h2 {
+    color: #cc2c3f;
+    margin-top: 0;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post-info {
+    padding: 10px;
+}
+
+.post-info .date {
+    color: #888;
+    font-size: 14px;
+}
+
+.post-info h3 {
+    color: #cc2c3f;
+    margin: 10px 0;
+}
+
+.post-info p {
+    color: #555;
+}

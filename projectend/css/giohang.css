@@ -1,11 +1,12 @@
 body {
   font-family: Arial, sans-serif;
+
 }
 
 table {
   width: 87%;
   margin-left: 100px;
-  
+
   border-collapse: collapse;
   margin-top: 40px;
 
@@ -16,16 +17,18 @@ td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  
+
 
 }
 
 th {
   background-color: #f2f2f2;
 }
+
 td {
   color: red;
 }
+
 td img {
   width: 100px;
   height: auto;
@@ -40,7 +43,7 @@ td img {
   border-radius: 20px;
   width: 100px;
   justify-content: space-between;
-  
+
 }
 
 .quantity-btn {
@@ -64,18 +67,22 @@ td img {
   display: flex;
   align-items: center;
 }
-.cart-item span{
+
+.cart-item span {
   color: black;
 }
+
 .cart-item img {
   margin-right: 10px;
 }
-#cartItems{
-    border-radius: 30px;
-    border: 1px solid whitesmoke;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        margin: 30px 110px 40px 110px;
+
+#cartItems {
+  border-radius: 30px;
+  border: 1px solid whitesmoke;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 30px 110px 40px 110px;
 }
+
 .cart-item-info {
   flex: 1;
 }
@@ -94,19 +101,11 @@ td img {
   text-align: right;
   margin-top: 20px;
 
+
 }
 
-
-
-
-
-
-
-
-
-
-
-.cart-table th, .cart-table td {
+.cart-table th,
+.cart-table td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -120,17 +119,28 @@ td img {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 18px;
 }
 
 .total {
   font-weight: bold;
   font-size: 1.2em;
+  display: grid;
+  margin-top: 30px;
+  color: red;
+  gap: 50px;
+  grid-template-columns: auto auto;
+
 }
 
 .cart-actions {
-  margin-top: 20px;
+
   display: flex;
   justify-content: space-between;
+  margin: 20px 0 10px 100px;
+
 }
 
 button {
@@ -139,6 +149,8 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 20px;
+
 }
 
 button:hover {
@@ -147,6 +159,7 @@ button:hover {
 
 .coupon {
   margin-top: 20px;
+  margin-left: 100px;
 }
 
 #coupon-code {
@@ -155,7 +168,41 @@ button:hover {
 }
 
 #apply-coupon {
-  padding: 10px;
-  width: 80px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: larger;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
+#checkout {
+  margin-left: 850px;
+  font-size: larger;
+
+  background-color: rgba(255, 145, 0, 0.891);
+}
+
+#continue-shopping {
+  font-size: 16px;
+}
+
+#total-items {
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+hr {
+  margin-left: 100px;
+  margin-right: 100px;
+  border-color: rgba(255, 255, 255, 0.192);
+}
+
+#tamtinh {
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+#gia {
+  text-align: right;
+  margin-right: 100px;
+}

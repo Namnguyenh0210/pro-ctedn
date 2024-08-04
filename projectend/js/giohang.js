@@ -1,3 +1,4 @@
+
 const removeFromCart = (name) => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart = cart.filter((item) => item.name !== name);
@@ -51,16 +52,24 @@ const showCart = () => {
             </div>
       
             <div class="cart-summary">
-            
-           
-           
+            <span id="total-items"> CỘNG GIỎ HÀNG</span>
+            <hr>
+            <div class="total">
+            <span id="tamtinh">Tạm Tính</span>
+            <span id="gia">${calculateTotal()}</span>
+            </div>
+            <hr>
             <div class="summary-row">
             <span>Giao hàng</span>
             <span>Giao hàng miễn phí</span>
+             
             </div>
-           
-            
-           
+            <hr>
+            <div class="total">
+            <span id="tamtinh">Tổng Giá</span>
+            <span id="gia">${calculateTotal()}</span>
+            </div>
+            <hr>
             </div>
            
             <div class="coupon">
@@ -112,7 +121,7 @@ const showCart = () => {
         quantityInput.type = "number";
         quantityInput.value = item.quantity;
         quantityInput.classList.add("quantity-input");
-        
+
         quantityInput.onchange = (e) =>
             updateQuantity(item.name, parseInt(e.target.value));
 
@@ -133,7 +142,7 @@ const showCart = () => {
             style: "currency",
             currency: "VND",
         });
-      
+
         tr.appendChild(productTd);
         tr.appendChild(priceTd);
         tr.appendChild(quantityTd);
@@ -142,20 +151,19 @@ const showCart = () => {
         tbody.appendChild(tr);
     });
 
-    let totalDiv = document.createElement("div");
-    totalDiv.classList.add("cart-total");
-    totalDiv.innerHTML = `Tổng giá: ${calculateTotal()}`;
-    cartItems.appendChild(totalDiv);
 
-    
+
     // quay tro lai trang san pham
     document.getElementById("continue-shopping").addEventListener("click", () => {
         window.location.href = "sanpham.html";
     });
+
 };
 
 
 document.addEventListener("DOMContentLoaded", () => {
-   
+
     showCart();
 });
+
+
